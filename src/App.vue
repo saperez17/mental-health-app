@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="25%">
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
-  </div>
+  <Home/>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
+import Home from '@/views/Home'
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld
+    Home
   }
-};
+}
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+#app, * {
+  font-family: 'Varela Round', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* text-align: center; */
+  /* color: #2c3e50; */
+  margin: 0;
+  padding: 0;
+
+  /* background-color: whitesmoke; */
 }
+
+p{ margin: 0;}
+.container-fluid {
+  padding: 0
+}
+.btn-primary {
+  background-color: #1d93d9 !important;
+  border-color: #1375ad !important;
+}
+.btn-primary:hover{
+  background-color: #3d9ed6 !important;
+  border-color: #3d9ed6 !important;
+}
+
+
+
 </style>
